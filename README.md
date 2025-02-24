@@ -8,20 +8,17 @@ Protected routes
 Modular component-based architecture
 Dynamic page loading
 Modern UI with CSS animations
-Project Structure
-├── components/
-│   ├── auth/          # Authentication component
-│   ├── home/          # Home page component
-│   ├── router/        # SPA routing implementation
-│   ├── test/          # Test page component
-│   ├── user/          # User management
-│   └── component_base.mjs
-├── styles/
-│   └── main.css       # Global styles
-├── app.js             # Application entry point
-├── index.html         # Main HTML template
-├── routes.mjs         # Route definitions
-└── server.js          # Development server
+
+
+Project Structure:
+
+![image](https://github.com/user-attachments/assets/001cb841-4f57-4d48-af6c-63455b67edd7)
+
+
+
+
+
+
 
 Getting Started
 
