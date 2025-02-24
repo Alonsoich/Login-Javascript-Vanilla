@@ -1,0 +1,203 @@
+/* Global styles */
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('https://fonts.gstatic.com/s/spacegrotesk/v13/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2HQZ9pb.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #101828;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Navigation links */
+.nav {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(246, 61, 104, 0.1);
+    color: #f63d68;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    margin: 10px;
+    border: 1px solid #4c5463;
+}
+
+.nav:hover {
+    box-shadow: 0px 0px 10px #f63d68;
+    background: rgba(246, 61, 104, 0.2);
+    transform: translateY(-3px);
+}
+
+.nav[href="/logout"] {
+    background: rgba(220, 53, 69, 0.1);
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.nav[href="/logout"]:hover {
+    box-shadow: 0px 0px 10px #dc3545;
+}
+
+/* User section */
+div.user {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+}
+
+div.user span.name {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Login form styles */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #4c5463;
+    box-shadow: 0px 0px 10px #f63d68;
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.login div {
+    margin-bottom: 20px;
+}
+
+.login label {
+    display: block;
+    color: #f63d68;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #4c5463;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.login input:focus {
+    border-color: #f63d68;
+    outline: none;
+    box-shadow: 0px 0px 5px #f63d68;
+}
+
+.login button {
+    width: 100%;
+    padding: 14px;
+    background: rgba(246, 61, 104, 0.1);
+    color: #f63d68;
+    border: 1px solid #4c5463;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.login button:hover {
+    box-shadow: 0px 0px 10px #f63d68;
+    background: rgba(246, 61, 104, 0.2);
+}
+
+/* Home page styles - updated */
+.home-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.welcome-header {
+    text-align: center;
+    width: 100%;
+}
+
+.welcome-header h1 {
+    color: #f63d68;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-header .name {
+    color: white;
+    font-weight: 600;
+}
+
+.actions-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #4c5463;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #f63d68;
+    margin-top: 2rem;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(246, 61, 104, 0.1);
+    color: #f63d68;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    border: 1px solid #4c5463;
+    backdrop-filter: blur(5px);
+}
+
+.nav-btn:hover {
+    box-shadow: 0px 0px 10px #f63d68;
+    background: rgba(246, 61, 104, 0.2);
+    transform: translateY(-3px);
+}
+
+.nav-btn.logout {
+    background: rgba(220, 53, 69, 0.1);
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.nav-btn.logout:hover {
+    box-shadow: 0px 0px 10px #dc3545;
+}
+
+/* Test page styles */
+.test-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #4c5463;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #f63d68;
+}
